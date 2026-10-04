@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest>=8.0
+# Optional: enables full CycloneDX 1.6 JSON-schema validation in tests/test_cbom.py
+cyclonedx-python-lib[json-validation]>=8.0

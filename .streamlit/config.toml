@@ -1,0 +1,22 @@
+# No telemetry: Streamlit's anonymous usage statistics are disabled.
+[browser]
+gatherUsageStats = false
+# Setting this explicitly stops Streamlit from looking up the machine's public IP
+# (an outbound request it otherwise makes in headless mode). Keeps ECDAT fully offline.
+serverAddress = "localhost"
+
+[server]
+headless = true
+maxUploadSize = 50
+
+[client]
+# Hide the developer toolbar (Deploy button) for demos.
+toolbarMode = "viewer"
+
+[theme]
+base = "light"
+primaryColor = "#1f5fa8"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#eef2f8"
+textColor = "#0b2545"
+font = "sans serif"
